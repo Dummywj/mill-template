@@ -1,0 +1,11 @@
+package build
+
+import mill.*, scalalib.*
+
+object counter extends ScalaModule {
+  def scalaVersion = "2.13.16"
+
+  def mvnDeps = Seq(
+    mvn"org.chipsalliance::chisel:6.7.0"
+  )
+}
