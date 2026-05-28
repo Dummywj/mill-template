@@ -8,4 +8,8 @@ object counter extends ScalaModule {
   def mvnDeps = Seq(
     mvn"org.chipsalliance::chisel:6.7.0"
   )
+  
+  def scalacPluginMvnDeps = Seq(
+    mvn"org.chipsalliance:::chisel-plugin:6.7.0"
+  )
 }
